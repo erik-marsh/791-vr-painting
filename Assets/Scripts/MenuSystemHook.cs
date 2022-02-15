@@ -23,7 +23,7 @@ public class MenuSystemHook : HookBase
         }
 
         MenuSystem menu = obj.GetComponent<MenuSystem>();
-        if (!obj)
+        if (!menu)
         {
             Debug.LogError("MenuSystemHook::Hook(): Object " + menuSystemName + " has no component of type MenuSystem");
         }
